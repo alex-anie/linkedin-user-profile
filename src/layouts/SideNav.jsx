@@ -5,8 +5,6 @@ import { Link, Outlet } from "react-router-dom";
 // import DisplayContent from "./DisplayContent";
 
 
-
-
 export default function SideNav() {
     const alexData = {
         firstName: 'Alex',
@@ -16,7 +14,8 @@ export default function SideNav() {
     }
   return (
     <>
-    <main>
+    <main className="flex">
+    <aside>
         <section className="bg-slate-100 max-w-[18em] w-[18em] h-[100vh] overflow-y-scroll">
             <nav className="">
                 <form className="w-[17em] flex justify-center py-8 px-2 border-b-[1px] border-slate-400 shadow-lg fixed backdrop-blur-sm">
@@ -40,11 +39,13 @@ export default function SideNav() {
                 </Link>
             </div>
         </section>
-    </main>
-    <main>
+    </aside>
+    <aside className="renderOutlet">
         {/* <DisplayContent /> */}
         <Outlet />
-    </main>
+    </aside>
+</main>
+
     </>
   )
 }
