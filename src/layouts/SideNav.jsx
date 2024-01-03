@@ -16,7 +16,7 @@ export default function SideNav() {
     <>
     <main className="flex">
     <aside>
-        <section className="bg-slate-100 max-w-[18em] w-[18em] h-[100vh] overflow-y-scroll">
+        <section className="bg-slate-100 max-w-[18em] w-[18em] h-[100vh] overflow-y-scroll" id="scrollStyles">
             <nav className="">
                 <form className="w-[17em] flex justify-center py-8 px-2 border-b-[1px] border-slate-400 shadow-lg fixed backdrop-blur-sm">
                     <div className="flex bg-white  rounded-xl pl-3 py-2 w-[90%]">

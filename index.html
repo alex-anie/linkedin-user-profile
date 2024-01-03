@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
   </head>
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    #scrollStyles::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    #scrollStyles::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    #scrollStyles::-webkit-scrollbar-thumb {
+      background: #888; 
+      border-radius: 5px;
+    }
+
+    #scrollStyles::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
